@@ -1,0 +1,132 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-image: linear-gradient(
+    160deg,
+    rgb(114, 165, 114),
+    rgb(59, 176, 59)
+  );
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  height: 100%;
+}
+
+.form-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 28px;
+  color: #045817;
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #666;
+  text-align: start;
+  margin-bottom: 35px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  flex: 0 0 48%;
+}
+
+.label-group {
+  display: flex;
+  align-items: center;
+}
+
+label {
+  font-size: 18px;
+  color: #050505;
+  margin-right: 10px;
+}
+::placeholder {
+  color: rgb(81, 201, 119);
+  opacity: 1;
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  background-color: #4caf50; /* Background color */
+  color: #fff; /* Text color */
+  padding: 12px 20px; /* Padding */
+  border: none; /* Border */
+  border-radius: 5px; /* Border radius */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor style */
+  transition: background-color 0.3s ease; /* Transition effect */
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049; /* Hover background color */
+}
+
+/* Styles for Desktop */
+
+@media only screen and (min-width: 768px) {
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .input-group {
+    flex: 0 0 48%;
+  }
+
+  .label-group {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Styles for Mobile */
+
+@media only screen and (max-width: 767px) {
+  .form-group {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .input-group {
+    flex: 1 0 100%;
+    margin-bottom: 20px;
+  }
+}
